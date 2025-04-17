@@ -1,4 +1,4 @@
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();class a extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){const r=this.getAttribute("vendor")||"Unknown Vendor",s=this.getAttribute("product")||"Unknown Product",o=this.getAttribute("rating")||"A",e=this.getAttribute("label")||"GREAT",t=this.getAttribute("samples")||"6",i=this.getAttribute("date")||"17 Feb 2025",l=`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&o(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=n(e);fetch(e.href,t)}})();class l extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){const i=this.getAttribute("vendor")||"Unknown Vendor",n=this.getAttribute("product")||"Unknown Product",o=this.getAttribute("rating")||"A",e=this.getAttribute("label")||"GREAT",t=this.getAttribute("samples")||"6",r=this.getAttribute("date")||"17 Feb 2025",a=`
       <style>
         .card {
           font-family: sans-serif;
@@ -118,14 +118,14 @@
             <div class="label">${e}</div>
           </div>
           <div class="details">
-            <h3 class="lg-txt">${r}</h3>
-            <h3 class="lg-txt">${s}</h3>
+            <h3 class="lg-txt">${i}</h3>
+            <h3 class="lg-txt">${n}</h3>
             <p class="sm-txt">Tested ${t} samples</p>
-            <p class="sm-txt light-txt">Last test: ${i}</p>
+            <p class="sm-txt light-txt">Last test: ${r}</p>
           </div>
         </div>
         <div class="logo">
-          <img src="./finnrick-logo-black.jpg" alt="Finnrick logo" />
+          <img src="https://mariannsz.github.io/finnrick-rating-widget/finnrick-logo-black.jpg" alt="Finnrick logo" />
         </div>
       </article>
-    `;this.shadowRoot.innerHTML=l+c}}customElements.define("finnrick-rating",a);
+    `;this.shadowRoot.innerHTML=a+c}}customElements.define("finnrick-rating",l);
