@@ -38,14 +38,6 @@ date="19 Feb 2025" /finnrick-rating>
 | `samples` | ✅       | Number of samples tested        |
 | `date`    | ✅       | Date of the most recent test    |
 
-## 📦 Build & Deploy
-
-```bash
-npm install
-npm run build
-npm run deploy
-```
-
 ## 📄 License
 
 MIT © [Mariann Szűcs](https://github.com/mariannsz)
