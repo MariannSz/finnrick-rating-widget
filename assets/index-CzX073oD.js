@@ -125,7 +125,7 @@
           </div>
         </div>
         <div class="logo">
-          <img src="/finnrick-logo-black.jpg" alt="Finnrick logo" />
+          <img src="./finnrick-logo-black.jpg" alt="Finnrick logo" />
         </div>
       </article>
     `;this.shadowRoot.innerHTML=l+c}}customElements.define("finnrick-rating",a);
